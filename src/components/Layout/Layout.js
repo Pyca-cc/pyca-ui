@@ -7,9 +7,9 @@ import Hammer from "rc-hammerjs";
 
 import UIIcons from "../../pages/components/icons";
 import UINotifications from "../../pages/notifications";
-import TablesStatic from "../../pages/tables/static";
+import Inventory from "../../pages/inventory";
 import MapsGoogle from "../../pages/components/maps/google";
-import CoreTypography from "../../pages/typography";
+import CoreSwap from "../../pages/swap";
 import Charts from "../../pages/components/charts/Charts";
 import Home from "../../pages/home";
 
@@ -101,16 +101,16 @@ class Layout extends React.Component {
                       exact
                       component={Charts}
                     />
-                    <Route path="/tables" exact component={TablesStatic} />
+                    <Route path="/inventory" exact component={Inventory} />
                     <Route
                       path="/components/maps"
                       exact
                       component={MapsGoogle}
                     />
                     <Route
-                      path="/typography"
+                      path="/swap"
                       exact
-                      component={CoreTypography}
+                      component={CoreSwap}
                     />
                   </Switch>
                 </CSSTransition>

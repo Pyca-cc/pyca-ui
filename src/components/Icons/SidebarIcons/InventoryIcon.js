@@ -1,6 +1,6 @@
 import React from "react";
 
-class TablesIcon extends React.Component {
+class InventoryIcon extends React.Component {
   render() {
     return (
       <svg
@@ -38,4 +38,4 @@ class TablesIcon extends React.Component {
   }
 }
 
-export default TablesIcon;
+export default InventoryIcon;

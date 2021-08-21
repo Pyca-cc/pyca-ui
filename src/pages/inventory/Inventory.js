@@ -15,10 +15,10 @@ import {
 } from "reactstrap";
 import { Sparklines, SparklinesBars } from "react-sparklines";
 
-import Widget from "../../../components/Widget";
-import s from "./Static.module.scss";
+import Widget from "../../components/Widget";
+import s from "./Inventory.module.scss";
 
-class Static extends React.Component {
+class Inventory extends React.Component {
   constructor(props) {
     super(props);
 
@@ -26,7 +26,7 @@ class Static extends React.Component {
       tableStyles: [
         {
           id: 1,
-          picture: require("../../../assets/tables/1.png"), // eslint-disable-line global-require
+          picture: require("../../assets/tables/1.png"), // eslint-disable-line global-require
           description: "Palo Alto",
           info: {
             type: "JPEG",
@@ -41,7 +41,7 @@ class Static extends React.Component {
         },
         {
           id: 2,
-          picture: require("../../../assets/tables/2.png"), // eslint-disable-line global-require
+          picture: require("../../assets/tables/2.png"), // eslint-disable-line global-require
           description: "The Sky",
           info: {
             type: "PSD",
@@ -56,7 +56,7 @@ class Static extends React.Component {
         },
         {
           id: 3,
-          picture: require("../../../assets/tables/3.png"), // eslint-disable-line global-require
+          picture: require("../../assets/tables/3.png"), // eslint-disable-line global-require
           description: "Down the road",
           label: {
             colorClass: "primary",
@@ -75,7 +75,7 @@ class Static extends React.Component {
         },
         {
           id: 4,
-          picture: require("../../../assets/tables/4.png"), // eslint-disable-line global-require
+          picture: require("../../assets/tables/4.png"), // eslint-disable-line global-require
           description: "The Edge",
           info: {
             type: "PNG",
@@ -90,7 +90,7 @@ class Static extends React.Component {
         },
         {
           id: 5,
-          picture: require("../../../assets/tables/5.png"), // eslint-disable-line global-require
+          picture: require("../../assets/tables/5.png"), // eslint-disable-line global-require
           description: "Fortress",
           info: {
             type: "JPEG",
@@ -798,4 +798,4 @@ class Static extends React.Component {
   }
 }
 
-export default Static;
+export default Inventory;

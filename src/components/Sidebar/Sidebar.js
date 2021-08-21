@@ -10,8 +10,8 @@ import LinksGroup from "./LinksGroup";
 
 import { changeActiveSidebarItem } from "../../actions/navigation";
 import HomeIcon from "../Icons/SidebarIcons/HomeIcon";
-import TypographyIcon from "../Icons/SidebarIcons/TypographyIcon";
-import TablesIcon from "../Icons/SidebarIcons/TablesIcon";
+import SwapIcon from "../Icons/SidebarIcons/SwapIcon";
+import InventoryIcon from "../Icons/SidebarIcons/InventoryIcon";
 import NotificationsIcon from "../Icons/SidebarIcons/NotificationsIcon";
 import ComponentsIcon from "../Icons/SidebarIcons/ComponentsIcon";
 
@@ -101,10 +101,10 @@ class Sidebar extends React.Component {
               this.props.dispatch(changeActiveSidebarItem(activeItem))
             }
             activeItem={this.props.activeItem}
-            header="Typography"
+            header="Swap"
             isHeader
-            iconName={<TypographyIcon className={s.menuIcon} />}
-            link="/typography"
+            iconName={<SwapIcon className={s.menuIcon} />}
+            link="/swap"
             index="core"
           />
           <LinksGroup
@@ -112,11 +112,11 @@ class Sidebar extends React.Component {
               this.props.dispatch(changeActiveSidebarItem(t))
             }
             activeItem={this.props.activeItem}
-            header="Tables Basic"
+            header="Inventory"
             isHeader
-            iconName={<TablesIcon className={s.menuIcon} />}
-            link="/tables"
-            index="tables"
+            iconName={<InventoryIcon className={s.menuIcon} />}
+            link="/inventory"
+            index="inventory"
           />
           <LinksGroup
             onActiveSidebarItemChange={(activeItem) =>

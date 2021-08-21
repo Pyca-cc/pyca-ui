@@ -221,7 +221,7 @@ class Home extends React.Component {
         data: [0, 0.1, 0.1, 0.3, 1, 0.6, 1.1, 1.5, 1.6, 2],
       },
       {
-        name: "Line 5",
+        name: "BTC",
         type: "line",
         stack: "总量",
         smooth: true,
